@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
+    z-index: 10;
 }
 .navbar ul {
     display: flex;
@@ -38,10 +39,13 @@
     color: black;
     margin: auto;
 }
-.navbar div:hover {
-    background-color: pink;
+
+
+.navbar img {
+    margin-left: 10px;
+    border: 1px solid rgb(161, 159, 159);
     border-radius: 20%;
-}   
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -58,7 +62,7 @@
     height: auto;
 }
 .container img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.5s ease;
     box-shadow: 10px 10px 5px pink;
 }
@@ -156,8 +160,92 @@ footer {
 footer a {
     margin-right: 10px;
 }
+
+.burger {
+    display:none;
+}
+
 @media (max-width: 700px) {
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .burger span{
+        position: absolute;
+        width: 30px; 
+        left: 5px; 
+        height: 3px;
+        background-color: black; 
+        bottom: 20px;
+    }
+
+    .burger span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+
+    .burger span:nth-child(3){
+        transform: translateY(10px);
+    }
+
+    .navbar ul {
+        position: absolute;
+        background: radial-gradient(circle at top left, rgb(239, 15, 243), rgb(177, 56, 253), rgb(171, 50, 212));
+        flex-direction:column;
+        width :30%;
+        height: auto;
+        top: 61px;
+        left: -40%;
+        z-index:2;
+    }
     
+    .navbar ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li:hover {
+        background-color: black;
+        transform: scale(1.07);
+        transition: 0.4s ease;
+        border-radius: 5%;
+    }
+
+    .navbar ul li a:hover {
+        color: white;
+    }
+
+    .navbar ul li:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .navbar ul li a {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .navbar.open ul {
+        transform: translateX(100%);
+        transition: 0.7 ease-in-out;
+    }
+
+    .navbar.open .burger span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .navbar.open .burger span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .navbar.open .burger span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
     .container {
         display: flex;
         flex-direction: column; 
@@ -180,9 +268,10 @@ footer a {
         margin-top: 20px; 
         border-radius: 10%; 
         box-shadow: 5px 5px 5px gray; 
-        width: 95%; 
+        width: 80%; 
         height: auto; 
         margin: auto; 
+        margin-right: 10px;
     }
     
     .container img:hover {
@@ -239,7 +328,7 @@ footer a {
         border-radius: 10%; 
         box-shadow: 5px 5px 5px gray; 
         width: 320px;
-        height: 200px; 
+        height: 285px; 
         margin: auto; 
     }
 }
