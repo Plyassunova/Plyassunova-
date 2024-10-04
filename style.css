@@ -287,7 +287,6 @@ footer a {
 }
 
 .math form fieldset .counters div label, input {
-    margin: 0.7em;
     text-align: center;
 }
 
@@ -320,6 +319,10 @@ footer a {
 .math form fieldset p span {
     margin: auto;
     font-size: 1.2rem;
+}
+
+.counters {
+    padding-left: 3em;
 }
 
 
