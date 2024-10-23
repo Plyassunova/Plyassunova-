@@ -326,6 +326,142 @@ footer a {
 }
 
 
+.API {
+    display: flex;
+    flex-direction: column;
+}
+
+.API .Moscow {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Moscow img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Miami {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .Miami img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Tucson {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px; 
+}
+
+.API .Tucson img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;  
+}
+
+.API .New-York {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .New-York img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Washington {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Washington img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Moscow img {
+    border-radius: 8px;
+}
+
+.API .Tucson img {
+    border-radius: 8px;
+}
+
+.API .Miami img {
+    border-radius: 8px;
+}
+
+.API .New-York img {
+    border-radius: 8px;
+}
+
+.API .Washington img {
+    border-radius: 8px;
+}
+
+.API .Moscow span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Miami span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Tucson span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .New-York span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Washington span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.name {
+    display: flex;
+    margin-left: 30%;
+    margin-top: -2em;
+    margin-bottom: 3%;
+}
+
+
 
 @media (max-width: 700px) {
     .burger {
@@ -486,6 +622,47 @@ footer a {
     .math form fieldset {
         width: 100%;
     }
+
+    .API .Moscow {
+        width: 100%;
+    }
+
+    .API .Tucson {
+        width: 100%;
+    }
+
+    .API .Miami {
+        width: 100%;
+    }
+
+    .API .New-York {
+        width: 100%;
+    }
+    
+    .API .Miami {
+        width: 100%;
+    }
+
+    .API .Moscow span {
+        font-size: 1.05rem;
+    }
+
+    .API .Tucson span {
+        font-size: 1.05rem;
+    }
+
+    .API .Miami span {
+        font-size: 1.05rem;
+    }
+
+    .API .New-York span {
+        font-size: 1.05rem;
+    }
+
+    .API .Washington span {
+        font-size: 1.05rem;
+    }
+
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
