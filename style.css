@@ -460,6 +460,10 @@ footer a {
     margin-top: -2em;
     margin-bottom: 3%;
 }
+.animation {
+    border: none;
+    animation: move 1s linear infinite;
+}
 
 
 
