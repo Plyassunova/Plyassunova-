@@ -1,2 +1,0 @@
-wasabi,12.0
-coffee,12.0
